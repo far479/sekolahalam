@@ -1,0 +1,173 @@
+/* Reset beberapa gaya default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #006400;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tentang Sekolah */
+#about {
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 32px;
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Program Pendidikan */
+.programs {
+    background-image: url('images/background-sekolah.jpg');
+    background-size: cover; /* Agar gambar menyesuaikan ukuran layar */
+    background-position: center; /* Posisi gambar tetap di tengah */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 40px 20px;
+}
+
+.program {
+    width: 30%; /* Lebar 30% untuk desktop */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi transparan agar teks terbaca jelas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.program h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.program p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsif untuk perangkat dengan lebar maksimal 768px (Tablet & Smartphone) */
+@media screen and (max-width: 768px) {
+    .programs {
+        flex-direction: column; /* Ubah layout menjadi kolom untuk perangkat kecil */
+        align-items: center; /* Rata tengah */
+    }
+
+    .program {
+        width: 80%; /* Lebar 80% agar lebih sesuai di layar kecil */
+        margin-bottom: 20px; /* Jarak antar program */
+    }
+
+    .program h3 {
+        font-size: 22px; /* Mengurangi ukuran font pada perangkat kecil */
+    }
+
+    .program p {
+        font-size: 14px; /* Mengurangi ukuran font pada perangkat kecil */
+    }
+}
+
+/* Responsif untuk perangkat dengan lebar maksimal 480px (Smartphone) */
+@media screen and (max-width: 480px) {
+    .program {
+        width: 90%; /* Lebar lebih besar agar lebih cocok di layar ponsel */
+        padding: 15px; /* Mengurangi padding agar lebih pas di layar sempit */
+    }
+
+    .program h3 {
+        font-size: 20px; /* Mengurangi ukuran font pada layar ponsel */
+    }
+
+    .program p {
+        font-size: 13px; /* Mengurangi ukuran font pada layar ponsel */
+    }
+}
+
+/* Guru dan Pembimbing */
+#teachers h2 {
+    font-size: 32px;
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+.teacher-list {
+    list-style: none;
+    padding: 0;
+}
+
+.teacher-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 16px;
+}
